@@ -1,5 +1,5 @@
 export const CREDENTIAL_SCHEMA = {
-    id: "did:hackathon:soubai/credential-schema/phc",
+    id: "did:phc:soubai/credential-schema/phc",
     type: "PersonalHealthCredential",
     properties: {
       bloodType: "string",
