@@ -1,10 +1,9 @@
 export const CREDENTIAL_SCHEMA = {
-    id: "did:example:123/credential-schema/phc",
+    id: "did:hackathon:soubai/credential-schema/phc",
     type: "PersonalHealthCredential",
     properties: {
       bloodType: "string",
-      allergies: ["string"],
+      weight: "number",
       vaccinations: ["string"],
-      conditions: ["string"]
     }
   };

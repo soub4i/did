@@ -21,7 +21,7 @@ export class CredentialService {
       }
   
       const issuer = {
-        id: 'did:example:issuer',
+        id: 'did:hackathon:issuer',
         publicKey: CryptoUtils.generateKeyPair().publicKey
       };
   

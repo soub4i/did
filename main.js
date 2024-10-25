@@ -7,15 +7,14 @@
   
     // Issue a credential
     const subject = {
-      id: 'did:example:holder123',
-      biometricData: 'some-secure-biometric-data'
+      id: 'did:hackathon:soubai',
+      biometricData: 'my-fingerprint-biometrics-info'
     };
   
     const healthData = {
       bloodType: 'A+',
-      allergies: ['peanuts'],
       vaccinations: ['COVID-19', 'Flu'],
-      conditions: ['none']
+      weight: 76
     };
   
     try {
@@ -36,7 +35,7 @@
       // Create DIDComm message
       const message = await didCommService.createDIDCommMessage(
         credential,
-        'did:example:recipient456'
+        'did:hackathon:recipient456'
       );
   
       // Verify a specific claim (e.g., blood type)
