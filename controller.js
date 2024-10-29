@@ -82,3 +82,7 @@ export const  issuer = async (req, res) => {
       res.status(400).json({ error: error.message });
     }
   };
+
+  export const  health = async (req, res) => {
+    return res.json({ status: "ok" })
+  }
